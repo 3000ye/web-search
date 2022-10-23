@@ -17,6 +17,8 @@ function web_search() {
     book          "https://book.douban.com/subject_search?search_text="
     stackoverflow "https://stackoverflow.com/search?q="
     segmentfault  "https://segmentfault.com/search?q="
+    taobao        "https://s.taobao.com/search?q="
+    jd            "https://search.jd.com/Search?keyword="
   )
 
   # check whether the search engine is supported
@@ -54,6 +56,8 @@ alias readfree='web_search readfree'
 alias book='web_search book'
 alias sof='web_search stackoverflow'
 alias sf='web_search segmentfault'
+alias taobao='web_search taobao'
+alias jd='web_search jd'
 
 #add your own !bang searches here
 alias wiki='web_search duckduckgo \!w'
@@ -62,4 +66,4 @@ alias youtube='web_search duckduckgo \!yt'
 alias map='web_search duckduckgo \!m'
 alias image='web_search duckduckgo \!i'
 alias ducky='web_search duckduckgo \!'
-alias web-search-config='nvim ~ .oh-my-zsh/custom/plugins/web-search.plugin.zsh'
+alias web-search-config='nvim ~/.oh-my-zsh/custom/plugins/web-search.plugin.zsh'
